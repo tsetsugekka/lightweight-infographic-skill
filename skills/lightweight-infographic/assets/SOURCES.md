@@ -8,3 +8,9 @@ Bundled snapshots of user-selected public examples. Use their visual language, n
 - [codex-market-skills.ja.svg](codex-market-skills.ja.svg) — [source](https://github.com/tsetsugekka/codex-market-skills/blob/52a411da4ad689c7292e912172886170e10c51dd/assets/how-it-works.ja.svg)
 
 `codex-market-skills.zh-CN.png` is a raster preview rendered from the bundled Chinese SVG. The SVG files retain their editable text and shapes. PNG text, EXIF, and timestamp metadata are excluded.
+
+## YouTube Transcript Analysis portrait example
+
+- [youtube-transcript-analysis.portrait.zh-CN.png](youtube-transcript-analysis.portrait.zh-CN.png) — a new 2:3 mobile composition generated for this skill using the built-in image-generation tool; not an image copied from the source repository.
+- Content source: [YouTube Transcript Analysis README](https://github.com/tsetsugekka/codex-youtube-transcript-analysis-skill/blob/17bcdd02d2c07fec2acb6d813e0efc5b1d9cc1ce/README.md).
+- Flow: provide a video, extract accessible captions, perform question-driven analysis, and follow timestamp links back to the original speech. Interface times are illustrative. This example demonstrates visual design, not an execution test of the transcript-analysis skill.

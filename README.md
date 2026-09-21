@@ -16,12 +16,13 @@ Use it for:
 - **GitHub repositories:** a simple “How it works” image showing inputs, key steps, and outcomes.
 - **PPT presentations:** a compact architecture overview or product workflow that fits on one slide.
 - **Product documentation:** onboarding, feature explanations, and quick-start illustrations.
+- **Mobile image posts:** portrait explainers for platforms such as Xiaohongshu, using a 2:3 canvas.
 
 The visual language stays consistent; the layout, icons, number of steps, and relationships adapt to the subject. It is not a full architecture specification or a fixed poster template.
 
 ## Example gallery
 
-Two real project examples show how the same visual language adapts to different subjects. Click an image to view the original.
+Three project examples show how the same visual language adapts to different subjects and canvas orientations. Click an image to view the original.
 
 ### SignalScout TV · Product workflow
 
@@ -40,6 +41,22 @@ A question becomes a research result through skill selection and evidence checks
 [Explore Codex Market Skills →](https://github.com/tsetsugekka/codex-market-skills)
 
 These earlier examples informed the skill's visual language. New diagrams adapt the structure, illustrations, and labels to their own content.
+
+### YouTube Transcript Analysis · Mobile portrait
+
+A **2:3 portrait** example: give a video, extract available captions, analyze the question, then jump back to the supporting moment. The Chinese layout is rebuilt for top-to-bottom reading, with larger text and short horizontal panels.
+
+[<img src="skills/lightweight-infographic/assets/youtube-transcript-analysis.portrait.zh-CN.png" width="420" alt="Chinese portrait infographic explaining the YouTube caption analysis workflow" />](skills/lightweight-infographic/assets/youtube-transcript-analysis.portrait.zh-CN.png)
+
+[Explore YouTube Transcript Analysis →](https://github.com/tsetsugekka/codex-youtube-transcript-analysis-skill)
+
+Use 2:3 (for example, 1200 × 1800) as the mobile preset, or specify your own ratio. Reversing a landscape canvas means swapping its width and height and recomposing the content, not stretching the original. Check readability at a phone display width of roughly 360–430 pixels. These are design defaults, not platform upload requirements. Mobile posts omit QR codes by default and identify the source with its project name or full `owner/repo` in a styled repository block; include a QR code only when explicitly requested.
+
+```text
+Use $lightweight-infographic to explain this project in a 2:3 portrait
+image for a mobile post. Recompose the flow from top to bottom, keep
+text readable on a phone, and deliver a PNG.
+```
 
 ## Skill
 
@@ -76,7 +93,7 @@ Include a QR code pointing to the URL I provide and verify the exported code.
 - Small interface illustrations explain actions; typography and restrained color establish hierarchy.
 - Actual sources determine facts and arrows; visual references determine style only.
 - PNG for display, genuine editable SVG when requested; native editable PPTX requires suitable presentation tooling.
-- QR codes are optional, generated from real URLs, and decoded from the final export before being reported as verified.
+- QR defaults follow the destination: mobile image posts omit them; GitHub READMEs, PPT presentations, and product documentation include a repository QR code when a verified shareable repository URL is available. Explicit user preferences override these defaults. Generate codes from the actual URL and decode the final export before reporting them as verified.
 - Rendering checks cover readability, overflow, connections, multilingual layout, and requested editability.
 
 ## Recommended layout
@@ -91,12 +108,13 @@ skills/
     agents/openai.yaml
     assets/
       signalscout-tv.png
+      youtube-transcript-analysis.portrait.zh-CN.png
       codex-market-skills.zh-CN.png
       codex-market-skills.{zh-CN,en,ja}.svg
       SOURCES.md
 ```
 
-The installable skill includes instructions, UI metadata, and bundled reference images. Before drawing, the agent must open both PNG examples to study color, type hierarchy, and illustration density, then adapt the layout, icons, and relationships to the new content. No API key or fixed rendering service is required; actual exports depend on the tools available in the current environment.
+The installable skill includes instructions, UI metadata, and bundled reference images. Before drawing, the agent must open the two landscape PNG references and, for mobile work, the portrait example to study color, type hierarchy, and illustration density, then adapt the layout, icons, and relationships to the new content. No API key or fixed rendering service is required; actual exports depend on the tools available in the current environment.
 
 ## Installation and usage
 
