@@ -1,0 +1,94 @@
+# 轻量信息图
+
+把产品或流程画成简单易懂的说明图，用于 GitHub README、PPT 和入门文档。
+
+![Codex Skill](https://img.shields.io/badge/Codex-Skill-18202A)
+![输出格式](https://img.shields.io/badge/Output-PNG%20%2F%20SVG-5086B1)
+
+[English](README.md) | **简体中文** | [日本語](README.ja.md)
+
+## 这是什么
+
+一个可复用的 Codex Skill：用简短文字、承担解释作用的小插图、柔和配色和清楚的连线，让读者快速看懂“它是怎么工作的”。
+
+适合这些场景：
+
+- **GitHub 仓库：**画一张简单易懂的工作原理图，说明输入、关键步骤和输出。
+- **PPT 演示：**在一页里解释简单架构、模块关系或产品流程。
+- **产品文档：**制作入门说明、功能介绍和快速上手配图。
+
+延续的是设计语言；版式、图标、步骤数量和关系根据实际内容调整。它不是完整技术架构规格，也不是固定海报模板。
+
+## Skill 入口
+
+| 入口 | 用途 |
+|---|---|
+| [`lightweight-infographic`](skills/lightweight-infographic/SKILL.md) | 梳理内容、绘制、导出并检查轻量信息图 |
+| [`agents/openai.yaml`](skills/lightweight-infographic/agents/openai.yaml) | Codex 展示信息与默认调用提示 |
+
+Skill 正文使用中文，图中文字按用户要求选择语言；三份 README 是本地化介绍，不是三套独立 Skill。
+
+## 调用示例
+
+```text
+使用 $lightweight-infographic，为这个仓库绘制工作原理图。
+先读 README 和相关代码，突出容易理解的主流程，
+交付适合放进 README 的 PNG 和可编辑 SVG。
+```
+
+```text
+使用 $lightweight-infographic，把这份系统说明画成适合 16:9 PPT 的
+简单架构图，讲清用户、服务和数据存储之间的关系，交付可插入的图片。
+```
+
+```text
+使用 $lightweight-infographic，为这个入门流程制作中文、英文、日文三版。
+分别调整换行，加入指向我提供地址的二维码，并验证最终导出的码。
+```
+
+## 主要特点
+
+- 按内容选择结构：顺序流程通常保留 3–5 步，架构关系可用分层或分支。
+- 用小型界面和插图解释动作，以克制的配色和文字层级帮助阅读。
+- 来源决定事实与箭头，参考图只决定风格。
+- PNG 用于直接展示，按需交付真正可编辑的 SVG；原生可编辑 PPTX 需要相应演示文稿工具。
+- 二维码按需加入，由真实地址生成，并在最终导出图上解码后才报告验证通过。
+- 渲染检查覆盖可读性、溢出、连线、多语言排版和所需可编辑性。
+
+## 视觉参考
+
+可以查看此前的[工作原理图示例](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.zh-CN.svg)。延续清楚、轻量的气质，不照搬其中的项目名称、图标或二维码地址。
+
+## 推荐目录
+
+```text
+README.md
+README.zh-CN.md
+README.ja.md
+skills/
+  lightweight-infographic/
+    SKILL.md
+    agents/openai.yaml
+```
+
+安装包只含执行指引和界面元数据，不要求 API key 或固定绘图服务；实际导出能力取决于当前环境可用的工具。
+
+## 安装与使用
+
+将 Skill 复制到 Codex 全局技能目录。如果已存在同名 Skill，先比较内容再替换。
+
+```sh
+git clone https://github.com/tsetsugekka/lightweight-infographic-skill.git
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -R lightweight-infographic-skill/skills/lightweight-infographic "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+新建一个 Codex 任务以发现已安装的 Skill，然后用 `$lightweight-infographic` 加上要解释的内容进行调用。有尺寸、语言或格式偏好时一并说明。如需原生可编辑 PPTX，请明确提出，并使用具备演示文稿工具的环境。
+
+## 安全规则
+
+只公开已获授权的内容，导出文件不包含凭据、私有路径和个人元数据。绘图请求本身不授权发布仓库、替换文档或删除旧图。
+
+## 能力边界
+
+这是指令包，不是独立绘图软件。它不能代替产品事实核对，未解码的二维码不能称为已验证，扁平图片不能称为原生可编辑幻灯片。无法完成的检查须如实说明。

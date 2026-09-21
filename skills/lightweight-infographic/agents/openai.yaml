@@ -1,0 +1,4 @@
+interface:
+  display_name: "轻量信息图"
+  short_description: "为 README、PPT 和产品说明绘制清楚易懂的轻量工作原理图"
+  default_prompt: "使用 $lightweight-infographic，为以下内容绘制一张轻量工作原理图，根据实际关系组织结构，用小插图解释功能，并交付适合展示的图片。"
