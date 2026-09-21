@@ -27,7 +27,7 @@
 
 配信ソースの収集、チャンネルの整理、ブラウザーでの確認、再生までを、小さな画面イラストで具体的に伝えます。原図は中国語です。
 
-[![SignalScout TV の仕組み：配信ソースの収集、チャンネル整理、ブラウザーでの確認、再生](https://raw.githubusercontent.com/tsetsugekka/signalscout-tv/main/public/architecture.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
+[![SignalScout TV の仕組み：配信ソースの収集、チャンネル整理、ブラウザーでの確認、再生](skills/lightweight-infographic/assets/signalscout-tv.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
 
 [SignalScout TV のリポジトリを見る →](https://github.com/tsetsugekka/signalscout-tv)
 
@@ -35,7 +35,7 @@
 
 質問からスキルの選択、根拠の確認を経て調査結果をまとめます。補助的な分析手法を主な流れの下に配置し、全体を読み取りやすくしています。
 
-[![Codex Market Skills の仕組み：質問、スキルの選択、根拠の確認、結果の出力](https://raw.githubusercontent.com/tsetsugekka/codex-market-skills/main/assets/how-it-works.ja.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.ja.svg)
+[![Codex Market Skills の仕組み：質問、スキルの選択、根拠の確認、結果の出力](skills/lightweight-infographic/assets/codex-market-skills.ja.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.ja.svg)
 
 [Codex Market Skills のリポジトリを見る →](https://github.com/tsetsugekka/codex-market-skills)
 
@@ -89,9 +89,14 @@ skills/
   lightweight-infographic/
     SKILL.md
     agents/openai.yaml
+    assets/
+      signalscout-tv.png
+      codex-market-skills.zh-CN.png
+      codex-market-skills.{zh-CN,en,ja}.svg
+      SOURCES.md
 ```
 
-インストールするファイルは実行指針と表示用メタデータのみです。API キーや特定の描画サービスを前提とせず、実際の出力形式は利用可能なツールによって決まります。
+実行指針、表示用メタデータ、参考画像を同梱しています。作図前に 2 枚の PNG 作例を実際に開き、配色、文字の階層、イラストの密度を確認したうえで、配置、アイコン、関係を新しい内容に合わせます。API キーや特定の描画サービスを前提とせず、実際の出力形式は利用可能なツールによって決まります。
 
 ## インストールと使い方
 

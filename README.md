@@ -27,7 +27,7 @@ Two real project examples show how the same visual language adapts to different 
 
 From collecting live-stream sources to organizing channels, checking connections, and playback: small interface illustrations make each step concrete. The original diagram is in Chinese.
 
-[![SignalScout TV workflow: source collection, channel organization, browser checks, and playback](https://raw.githubusercontent.com/tsetsugekka/signalscout-tv/main/public/architecture.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
+[![SignalScout TV workflow: source collection, channel organization, browser checks, and playback](skills/lightweight-infographic/assets/signalscout-tv.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
 
 [Explore SignalScout TV →](https://github.com/tsetsugekka/signalscout-tv)
 
@@ -35,7 +35,7 @@ From collecting live-stream sources to organizing channels, checking connections
 
 A question becomes a research result through skill selection and evidence checks. Supporting methods sit below the main flow so the overview stays easy to scan.
 
-[![Codex Market Skills workflow: ask a question, match skills, check evidence, and deliver results](https://raw.githubusercontent.com/tsetsugekka/codex-market-skills/main/assets/how-it-works.en.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.en.svg)
+[![Codex Market Skills workflow: ask a question, match skills, check evidence, and deliver results](skills/lightweight-infographic/assets/codex-market-skills.en.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.en.svg)
 
 [Explore Codex Market Skills →](https://github.com/tsetsugekka/codex-market-skills)
 
@@ -89,9 +89,14 @@ skills/
   lightweight-infographic/
     SKILL.md
     agents/openai.yaml
+    assets/
+      signalscout-tv.png
+      codex-market-skills.zh-CN.png
+      codex-market-skills.{zh-CN,en,ja}.svg
+      SOURCES.md
 ```
 
-The installable skill contains only instructions and UI metadata. No API key or fixed rendering service is required; actual exports depend on the tools available in the current environment.
+The installable skill includes instructions, UI metadata, and bundled reference images. Before drawing, the agent must open both PNG examples to study color, type hierarchy, and illustration density, then adapt the layout, icons, and relationships to the new content. No API key or fixed rendering service is required; actual exports depend on the tools available in the current environment.
 
 ## Installation and usage
 

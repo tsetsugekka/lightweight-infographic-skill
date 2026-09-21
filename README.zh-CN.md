@@ -27,7 +27,7 @@
 
 从收集直播源、整理频道，到浏览器检测和播放，用小型界面插图把每个步骤讲具体。
 
-[![SignalScout TV 工作原理：收集直播源、整理频道、浏览器检测和播放](https://raw.githubusercontent.com/tsetsugekka/signalscout-tv/main/public/architecture.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
+[![SignalScout TV 工作原理：收集直播源、整理频道、浏览器检测和播放](skills/lightweight-infographic/assets/signalscout-tv.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
 
 [查看 SignalScout TV 仓库 →](https://github.com/tsetsugekka/signalscout-tv)
 
@@ -35,7 +35,7 @@
 
 把一个问题经过技能匹配、证据核对，转化为研究结果。辅助研究方法放在主流程下方，让主线保持清楚。
 
-[![Codex Market Skills 工作原理：提出问题、匹配技能、核对证据和输出结果](https://raw.githubusercontent.com/tsetsugekka/codex-market-skills/main/assets/how-it-works.zh-CN.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.zh-CN.svg)
+[![Codex Market Skills 工作原理：提出问题、匹配技能、核对证据和输出结果](skills/lightweight-infographic/assets/codex-market-skills.zh-CN.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.zh-CN.svg)
 
 [查看 Codex Market Skills 仓库 →](https://github.com/tsetsugekka/codex-market-skills)
 
@@ -87,9 +87,14 @@ skills/
   lightweight-infographic/
     SKILL.md
     agents/openai.yaml
+    assets/
+      signalscout-tv.png
+      codex-market-skills.zh-CN.png
+      codex-market-skills.{zh-CN,en,ja}.svg
+      SOURCES.md
 ```
 
-安装包只含执行指引和界面元数据，不要求 API key 或固定绘图服务；实际导出能力取决于当前环境可用的工具。
+安装包包含执行指引、界面元数据和随包参考图。绘制前须实际打开两张 PNG 示例，学习配色、文字层级和图示密度，再按新内容调整布局、图标和关系。不要求 API key 或固定绘图服务；实际导出能力取决于当前环境可用的工具。
 
 ## 安装与使用
 
