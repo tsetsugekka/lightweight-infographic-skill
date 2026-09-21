@@ -19,6 +19,28 @@
 
 デザインの方向性を保ちながら、配置、アイコン、ステップ数、接続関係を内容に合わせます。詳細な技術仕様書や固定のポスターテンプレートではありません。
 
+## 作例ギャラリー
+
+2 つの実際のプロジェクトを通じて、軽量なデザインを異なる内容に応用する例を紹介します。画像をクリックすると原図を表示できます。
+
+### SignalScout TV · 製品の処理フロー
+
+配信ソースの収集、チャンネルの整理、ブラウザーでの確認、再生までを、小さな画面イラストで具体的に伝えます。原図は中国語です。
+
+[![SignalScout TV の仕組み：配信ソースの収集、チャンネル整理、ブラウザーでの確認、再生](https://raw.githubusercontent.com/tsetsugekka/signalscout-tv/main/public/architecture.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
+
+[SignalScout TV のリポジトリを見る →](https://github.com/tsetsugekka/signalscout-tv)
+
+### Codex Market Skills · 調査フロー
+
+質問からスキルの選択、根拠の確認を経て調査結果をまとめます。補助的な分析手法を主な流れの下に配置し、全体を読み取りやすくしています。
+
+[![Codex Market Skills の仕組み：質問、スキルの選択、根拠の確認、結果の出力](https://raw.githubusercontent.com/tsetsugekka/codex-market-skills/main/assets/how-it-works.ja.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.ja.svg)
+
+[Codex Market Skills のリポジトリを見る →](https://github.com/tsetsugekka/codex-market-skills)
+
+これらの既存作例が、本 Skill のデザインの基になっています。新しい図では、構成、イラスト、説明文を実際の内容に合わせて調整します。
+
 ## Skill
 
 | ファイル | 役割 |
@@ -56,10 +78,6 @@ $lightweight-infographic を使って、この導入フローの日本語・英�
 - 表示用の PNG と、必要に応じて実際に編集できる SVG を出力。ネイティブに編集できる PPTX には対応するプレゼン作成ツールが必要。
 - QR コードは必要な場合に実 URL から生成し、最終出力の読み取りを確認してから検証済みと報告。
 - 可読性、はみ出し、接続線、多言語の配置、要求された編集可能性を描画結果で確認。
-
-## デザイン参考
-
-以前作成した[仕組みの説明図](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.ja.svg)を参照できます。明快さと軽さを引き継ぎ、固有の名称、アイコン、QR コードのリンク先は流用しません。
 
 ## 推奨構成
 

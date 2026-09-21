@@ -19,6 +19,28 @@
 
 延续的是设计语言；版式、图标、步骤数量和关系根据实际内容调整。它不是完整技术架构规格，也不是固定海报模板。
 
+## 效果展示
+
+两个真实项目示例，展示同一种轻量设计语言如何适配不同内容。点击图片可查看原图。
+
+### SignalScout TV · 产品工作流程
+
+从收集直播源、整理频道，到浏览器检测和播放，用小型界面插图把每个步骤讲具体。
+
+[![SignalScout TV 工作原理：收集直播源、整理频道、浏览器检测和播放](https://raw.githubusercontent.com/tsetsugekka/signalscout-tv/main/public/architecture.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
+
+[查看 SignalScout TV 仓库 →](https://github.com/tsetsugekka/signalscout-tv)
+
+### Codex Market Skills · 研究工作流程
+
+把一个问题经过技能匹配、证据核对，转化为研究结果。辅助研究方法放在主流程下方，让主线保持清楚。
+
+[![Codex Market Skills 工作原理：提出问题、匹配技能、核对证据和输出结果](https://raw.githubusercontent.com/tsetsugekka/codex-market-skills/main/assets/how-it-works.zh-CN.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.zh-CN.svg)
+
+[查看 Codex Market Skills 仓库 →](https://github.com/tsetsugekka/codex-market-skills)
+
+这些既有示例是本 Skill 的风格来源。绘制新内容时，结构、插图和文字会随实际需求调整。
+
 ## Skill 入口
 
 | 入口 | 用途 |
@@ -54,10 +76,6 @@ Skill 正文使用中文，图中文字按用户要求选择语言；三份 READ
 - PNG 用于直接展示，按需交付真正可编辑的 SVG；原生可编辑 PPTX 需要相应演示文稿工具。
 - 二维码按需加入，由真实地址生成，并在最终导出图上解码后才报告验证通过。
 - 渲染检查覆盖可读性、溢出、连线、多语言排版和所需可编辑性。
-
-## 视觉参考
-
-可以查看此前的[工作原理图示例](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.zh-CN.svg)。延续清楚、轻量的气质，不照搬其中的项目名称、图标或二维码地址。
 
 ## 推荐目录
 

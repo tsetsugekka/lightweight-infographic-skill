@@ -19,6 +19,28 @@ Use it for:
 
 The visual language stays consistent; the layout, icons, number of steps, and relationships adapt to the subject. It is not a full architecture specification or a fixed poster template.
 
+## Example gallery
+
+Two real project examples show how the same visual language adapts to different subjects. Click an image to view the original.
+
+### SignalScout TV · Product workflow
+
+From collecting live-stream sources to organizing channels, checking connections, and playback: small interface illustrations make each step concrete. The original diagram is in Chinese.
+
+[![SignalScout TV workflow: source collection, channel organization, browser checks, and playback](https://raw.githubusercontent.com/tsetsugekka/signalscout-tv/main/public/architecture.png)](https://github.com/tsetsugekka/signalscout-tv/blob/main/public/architecture.png)
+
+[Explore SignalScout TV →](https://github.com/tsetsugekka/signalscout-tv)
+
+### Codex Market Skills · Research workflow
+
+A question becomes a research result through skill selection and evidence checks. Supporting methods sit below the main flow so the overview stays easy to scan.
+
+[![Codex Market Skills workflow: ask a question, match skills, check evidence, and deliver results](https://raw.githubusercontent.com/tsetsugekka/codex-market-skills/main/assets/how-it-works.en.svg)](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.en.svg)
+
+[Explore Codex Market Skills →](https://github.com/tsetsugekka/codex-market-skills)
+
+These earlier examples informed the skill's visual language. New diagrams adapt the structure, illustrations, and labels to their own content.
+
 ## Skill
 
 | Entry | Purpose |
@@ -56,10 +78,6 @@ Include a QR code pointing to the URL I provide and verify the exported code.
 - PNG for display, genuine editable SVG when requested; native editable PPTX requires suitable presentation tooling.
 - QR codes are optional, generated from real URLs, and decoded from the final export before being reported as verified.
 - Rendering checks cover readability, overflow, connections, multilingual layout, and requested editability.
-
-## Visual reference
-
-[See an earlier “How it works” infographic](https://github.com/tsetsugekka/codex-market-skills/blob/main/assets/how-it-works.en.svg) that informed this style. Reuse its clarity and lightness, not its project-specific labels, icons, or QR destination.
 
 ## Recommended layout
 
